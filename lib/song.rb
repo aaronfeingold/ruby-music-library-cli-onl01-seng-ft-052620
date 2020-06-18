@@ -23,9 +23,9 @@ class Song
     genre.songs << self unless genre.songs.include?(self)
   end 
   
-  def save
-    @@all << self 
-  end 
+  # def save
+  #   @@all << self 
+  # end 
   
   def self.create(name)
     # initializes

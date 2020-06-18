@@ -30,7 +30,7 @@ module Concerns
       end 
       
       def create(name)
-        self.new.tap 
+        self.new.tap { |obj| obj.save }
       end   
     end 
   end 

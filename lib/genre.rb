@@ -5,6 +5,7 @@ class Genre
   extend Concerns::Creatable::ClassMethods
   
   include Concerns::Creatable::InstanceMethods
+  
   @@all = []
   
   def initialize(name)

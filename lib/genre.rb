@@ -10,6 +10,14 @@ class Genre
     self.name = name 
   end
   
+  def self.all
+    @@all
+  end
+  
+  def genres 
+    self.songs.map { |song| songs.genre }.uniq 
+  end 
+  
   # def save
   #   @@all << self
   # end 
@@ -18,16 +26,7 @@ class Genre
   #   self.new(name).tap { |obj| obj.save }
   # end 
   
-  def self.all
-    @@all
-  end
-  
   # def self.destroy_all
   #   @@all.clear
   # end 
-  
-  def genres 
-    self.songs.map { |song| songs.genre }.uniq 
-  end 
-  
 end  

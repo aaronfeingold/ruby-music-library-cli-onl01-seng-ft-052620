@@ -27,14 +27,14 @@ class Song
   #   @@all << self 
   # end 
   
-  def self.create(name)
-    # initializes
-    song = Song.new(name)
-    # saves
-    song.save 
-    #and returns the song
-    song 
-  end 
+  # def self.create(name)
+  #   # initializes
+  #   song = Song.new(name)
+  #   # saves
+  #   song.save 
+  #   #and returns the song
+  #   song 
+  # end 
   
   def self.all
     @@all 

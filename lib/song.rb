@@ -3,7 +3,7 @@ class Song
   attr_reader :artist, :genre 
   
   extend Concerns::Findable
-  
+  include Concerns::Creatable::InstanceMethods
   
   @@all = []
   
@@ -45,7 +45,7 @@ class Song
   end 
   
   def self.new_from_filename(file)
-    # binding.pry
+    
     artist_name, song_name, genre_name = file.split(" - ")
     
     artist = Artist.find_or_create_by_name(artist_name)

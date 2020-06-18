@@ -10,9 +10,9 @@ class Genre
     self.name = name 
   end
   
-  def save
-    @@all << self
-  end 
+  # def save
+  #   @@all << self
+  # end 
   
   def self.create(name)
     self.new(name).tap { |obj| obj.save }

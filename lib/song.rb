@@ -40,22 +40,6 @@ class Song
     self.new
   end 
   
-  # def save
-  #   @@all << self 
-  # end 
-  
-  # def self.create(name)
-  #   # initializes
-  #   song = Song.new(name)
-  #   # saves
-  #   song.save 
-  #   #and returns the song
-  #   song 
-  # end 
-  
-  # def self.destroy_all 
-  #   self.all.clear
-  # end 
   
   
   

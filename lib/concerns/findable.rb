@@ -26,6 +26,8 @@ module Concerns
     
     module ClassMethods
       def destroy_all
+        self.all.clear 
+      end 
     end 
   end 
 end 

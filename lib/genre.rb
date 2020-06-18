@@ -14,9 +14,9 @@ class Genre
   #   @@all << self
   # end 
   
-  def self.create(name)
-    self.new(name).tap { |obj| obj.save }
-  end 
+  # def self.create(name)
+  #   self.new(name).tap { |obj| obj.save }
+  # end 
   
   def self.all
     @@all

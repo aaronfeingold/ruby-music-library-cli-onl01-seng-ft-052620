@@ -2,8 +2,9 @@ class Artist
   attr_accessor :name, :songs 
   
   extend Concerns::Findable
-  include Concerns::Creatable::InstanceMethods
+  extend Concerns::Creatable::ClassMethods
   
+  include Concerns::Creatable::InstanceMethods
   
   @@all = [] 
   

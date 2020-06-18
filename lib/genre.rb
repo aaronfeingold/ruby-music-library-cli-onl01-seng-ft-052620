@@ -22,9 +22,9 @@ class Genre
     @@all
   end
   
-  def self.destroy_all
-    @@all.clear
-  end 
+  # def self.destroy_all
+  #   @@all.clear
+  # end 
   
   def genres 
     self.songs.map { |song| songs.genre }.uniq 

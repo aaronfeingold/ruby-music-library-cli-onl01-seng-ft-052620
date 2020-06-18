@@ -25,7 +25,7 @@ module Concerns
     end
     
     module ClassMethods
-      
+      def destroy_all
     end 
   end 
 end 

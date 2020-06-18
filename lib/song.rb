@@ -4,6 +4,7 @@ class Song
   
   extend Concerns::Findable
   include Concerns::Creatable::InstanceMethods
+  extend Concerns::Creatable::ClassMethods
   
   @@all = []
   

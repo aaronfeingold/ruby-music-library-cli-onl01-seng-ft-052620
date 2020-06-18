@@ -1,5 +1,6 @@
 class Genre 
   attr_accessor :name 
+  attr_reader
   
   extend Concerns::Findable
   extend Concerns::Creatable::ClassMethods

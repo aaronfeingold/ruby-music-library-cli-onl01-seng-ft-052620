@@ -9,8 +9,8 @@ class Genre
   @@all = []
   
   def initialize(name)
-    self.name = name 
-    self.songs = []
+    @name = name 
+    @songs = []
   end
   
   def self.all

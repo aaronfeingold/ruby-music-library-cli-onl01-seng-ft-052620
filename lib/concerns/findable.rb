@@ -30,7 +30,8 @@ module Concerns
       end 
       
       def create(name)
-        self.new
+        self.new.tap 
+      end   
     end 
   end 
 end 

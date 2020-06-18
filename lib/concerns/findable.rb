@@ -16,4 +16,8 @@ module Concerns
       self.all.sort { |x, y| x.name <=> y.name }
     end 
   end
+  
+  module Creatable
+    module 
+  end 
 end 

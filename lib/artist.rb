@@ -12,9 +12,9 @@ class Artist
     self.songs = []
   end 
   
-  def save
-    @@all << self 
-  end 
+  # def save
+  #   @@all << self 
+  # end 
   
   def add_song(song)
     song.artist = self unless song.artist

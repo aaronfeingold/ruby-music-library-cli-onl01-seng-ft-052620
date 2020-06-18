@@ -3,8 +3,10 @@ class Song
   attr_reader :artist, :genre 
   
   extend Concerns::Findable
-  include Concerns::Creatable::InstanceMethods
   extend Concerns::Creatable::ClassMethods
+  
+  include Concerns::Creatable::InstanceMethods
+  
   
   @@all = []
   

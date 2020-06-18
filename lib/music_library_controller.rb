@@ -5,10 +5,11 @@ class MusicLibraryController
   end 
   
   def call 
+    puts "Welcome to your music library!"
     main_menu
   end
   
-    def call
+  def main_menu
     input = ""
 
     while input != "exit"

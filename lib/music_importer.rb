@@ -6,7 +6,7 @@ class MusicImporter
   end
 
   def files
-    array = Dir.glod(self.path + "*.mp3")
+    array = Dir.glod(self.path + "/*.mp3")
     array.map do |file|
       file.gsub(self.path + "/", "").gsub(".mp3", "")
      end

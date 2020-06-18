@@ -23,6 +23,20 @@ class Song
     genre.songs << self unless genre.songs.include?(self)
   end 
   
+  def self.all
+    @@all 
+  end
+  
+  def self.new_from_filename(file)
+    
+    artist_name, song_name, genre_name = file.split(" - ")
+    
+    artist = Artist.find_or_create_by_name(artist_name)
+    genre = Genre.find_or_create_by_name(genre_name.gsub(".mp3", ""))
+  
+    self.new
+  end 
+  
   # def save
   #   @@all << self 
   # end 
@@ -36,22 +50,10 @@ class Song
   #   song 
   # end 
   
-  def self.all
-    @@all 
-  end 
-  
   # def self.destroy_all 
   #   self.all.clear
   # end 
   
-  def self.new_from_filename(file)
-    
-    artist_name, song_name, genre_name = file.split(" - ")
-    
-    artist = Artist.find_or_create_by_name(artist_name)
-    genre = Genre.find_or_create_by_name(genre_name.gsub(".mp3", ""))
   
-    self.new
-  end 
   
 end 
